@@ -1,0 +1,46 @@
+{
+  "name": "datatier-api",
+  "version": "2.0.1",
+  "description": "DataSynthesis Node Based API for Platform",
+  "main": "app.js",
+  "scripts": {
+    "dist": "mkdir -p dist && cp -R node_modules api builders general parsers app.js package.json dist"
+  },
+  "keywords": [
+    "mysql",
+    "convert-string",
+    "string-format",
+    "random-number",
+    "random-int"
+  ],
+  "author": "balanscott",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "build": "^0.1.4",
+    "chance": "^1.1.8",
+    "connect-redis": "^5.0.0",
+    "cookie-parser": "~1.4.4",
+    "creditcard-generator": "0.0.7",
+    "dist": "^0.1.2",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "express-session": "^1.17.1",
+    "fs": "0.0.1-security",
+    "guid": "0.0.12",
+    "infinispan": "0.9.0",
+    "kafkajs": "1.15.0",
+    "moment": "^2.29.0",
+    "moment-timezone": "^0.5.31",
+    "morgan": "~1.9.1",
+    "mssqlserver": "0.0.2",
+    "mysql": "^2.18.1",
+    "npm": "^8.4.1",
+    "pg": "8.7.1",
+    "randexp": "^0.5.3",
+    "random": "^3.0.3",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "mysql2": "^2.2.5"
+  }
+}
