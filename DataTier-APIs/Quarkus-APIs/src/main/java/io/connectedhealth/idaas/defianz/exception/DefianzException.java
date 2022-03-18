@@ -1,4 +1,4 @@
-package com.redhat.idaas.datasynthesis.exception;
+package io.connectedhealth.idaas.defianz.exception;
 
 import java.io.Serializable;
 

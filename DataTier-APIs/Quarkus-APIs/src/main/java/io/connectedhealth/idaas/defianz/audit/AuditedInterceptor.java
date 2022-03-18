@@ -33,7 +33,7 @@ public class AuditedInterceptor {
         AuditMessage message = new AuditMessage();
         message.setProcessingtype("API");
         message.setIndustrystd("N/A");
-        message.setComponent("API_datasynthesis_" + StringUtils.join(names, "", 1, names.length));
+        message.setComponent("API_defianz_" + StringUtils.join(names, "", 1, names.length));
         message.setMessagetrigger("N/A");
         message.setProcessname("INBD");
         message.setAuditdetails(StringUtils.join(names, " "));
