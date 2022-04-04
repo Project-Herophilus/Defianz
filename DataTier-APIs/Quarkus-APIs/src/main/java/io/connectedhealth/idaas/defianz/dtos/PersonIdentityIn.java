@@ -1,16 +1,15 @@
 package io.connectedhealth.idaas.defianz.dtos;
 
+import java.util.Map;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
-public class AbaBanking {
-    public String routingNumber;
-    public String telegraphicName;
-    public String customerName;
-    public String city;
-    public String state;
-    public String zipCode;
+public class PersonIdentityIn {
+    public String application;
+    public String organization;
+    public Map<String, Object> identifiers;
 
-    public AbaBanking() {
+
+    public PersonIdentityIn() {
     }
 
     //toString
