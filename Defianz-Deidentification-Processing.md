@@ -16,7 +16,7 @@ The key definitions for the platform are:
 There are three key processes that this platform is intended to support and enable. Every key process and aspect of this system ties back to the iDaaS-KIC (Auditing) system. 
 
 ## Creation of a Unique Idenifier for Input Data
-This process deals with how the platform identifies data records presented to it. The Defianz platform first tier component before anything can be done within it is unique identification of input data.
+This process deals with how the platform identifies data records presented to it. The Defianz platform first tier component before anything can be done within it is unique identification of input data. <b> This is represented in the definaz data model in the table: personidentity </b>.
 
 <b> If anything changes in the implementation and the data sent it the key created will be DIFFERENT and this process will produce a different identifier and all information produced by this API will be unique </b>
 1. The exposed API endpoint will take the following attributes: application, organization and all PersonIdentity Attributes (as one string)
