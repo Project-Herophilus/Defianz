@@ -42,4 +42,4 @@ Example: An exposed API will take application, organization, industry std, data 
 11. PV1.9.3 will use FirstName
   
 ## Detailed Data Element Association to De-Identified Data
-The key second data step will be used by the platform to carry the specific data and we will then create a specific platform data attribute and pull the specific record for the specific attribute that will be used permanently. If NONE exist then records will be premamently created.
+The key second data step will be used by the platform to carry the specific data and we will then create a specific platform data attribute and pull the specific record for the specific attribute that will be used permanently. If NONE exist then records will be premamently created.<b> This is represented in the defianz data model in the table: crossmap_dataattribute_dtl </b>.
