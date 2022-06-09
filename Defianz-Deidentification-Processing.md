@@ -23,7 +23,7 @@ This process deals with how the platform identifies data records presented to it
 2. A specific identifier will be produced and the platform will respond with that number to the requesting system. 
 
 ## Relationship of Data for Processing
-The ability to know what an implementation expects to have mapped to synthetic data. This provides the system to know and understand what specific data is being re-mapped.
+The ability to know what an implementation expects to have mapped to synthetic data. This provides the system to know and understand what specific data is being re-mapped. <b> This is represented in the defianz data model in the table: crossmap_dtl </b>.
 
 Example: An organization named MCTN has implemented a system named MyMedicalRecord that sends HL7 v2 ADTs into the platform. In order for this system to be effective and extensible means that the implementation  has to use this information and pull back ALL the specifically mapped fields the implementation defined as PHI (Personal Health Information)/ PII (Peronal Identifiable Information) 
 
