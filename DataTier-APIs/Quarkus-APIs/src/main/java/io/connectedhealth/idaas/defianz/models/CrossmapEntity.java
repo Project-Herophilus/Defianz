@@ -13,38 +13,38 @@ import javax.persistence.Table;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.sql.Timestamp;
-import java.util.List;
 
 @Entity
-@Table(name = "personidentities")
-public class PersonIdentityEntity extends io.quarkus.hibernate.orm.panache.PanacheEntityBase {
-    private long personIdentityId;
+@Table(name = "crossmaps")
+public class CrossmapEntity extends io.quarkus.hibernate.orm.panache.PanacheEntityBase {
+    private long crossmapId;
     private String organization;
     private String application;
-    private String sha256;
+    private String crossmapDesc;
     private Timestamp createdDate;
     private RefDataStatusEntity status;
+    private String industryStd;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "personidentityid", nullable = false)
-    public long getPersonIdentityId() {
-        return personIdentityId;
+    @Column(name = "crossmapid", nullable = false)
+    public long getCrossmapId() {
+        return crossmapId;
     }
 
-    public void setPersonIdentityId(long personIdentityId) {
-        this.personIdentityId = personIdentityId;
+    public void setCrossmapId(long crossmapId) {
+        this.crossmapId = crossmapId;
     }
 
 
     @Basic
-    @Column(name = "sha256", nullable = true, length = 64)
-    public String getSha256() {
-        return sha256;
+    @Column(name = "crossmapdesc", nullable = true, length = 49)
+    public String getCrossmapDesc() {
+        return crossmapDesc;
     }
 
-    public void setSha256(String sha256) {
-        this.sha256 = sha256;
+    public void setCrossmapDesc(String desc) {
+        this.crossmapDesc = desc;
     }
 
     @Basic
@@ -68,6 +68,16 @@ public class PersonIdentityEntity extends io.quarkus.hibernate.orm.panache.Panac
     }
 
     @Basic
+    @Column(name = "industryStd", nullable = true, length = 10)
+    public String getIndustryStd() {
+        return industryStd;
+    }
+
+    public void setIndustryStd(String std) {
+        this.industryStd = std;
+    }
+
+    @Basic
     @CreationTimestamp
     @Column(name = "createddate", nullable = true)
     public Timestamp getCreatedDate() {
@@ -80,8 +90,8 @@ public class PersonIdentityEntity extends io.quarkus.hibernate.orm.panache.Panac
 
     @Override
     public int hashCode() {
-		return java.util.Objects.hash(personIdentityId, organization, application,
-					createdDate, sha256, status);
+		return java.util.Objects.hash(crossmapId, crossmapDesc, organization, application,
+					createdDate, industryStd, status);
 	}
 
     @Override
@@ -92,12 +102,13 @@ public class PersonIdentityEntity extends io.quarkus.hibernate.orm.panache.Panac
 			return false;
 		if (getClass() != o.getClass())
 			return false;
-		PersonIdentityEntity other = (PersonIdentityEntity) o;
-		return java.util.Objects.equals(personIdentityId, other.personIdentityId) &&
+		CrossmapEntity other = (CrossmapEntity) o;
+		return java.util.Objects.equals(crossmapId, other.crossmapId) &&
+            java.util.Objects.equals(crossmapDesc, other.crossmapDesc) &&
 			java.util.Objects.equals(organization, other.organization) &&
             java.util.Objects.equals(application, other.application) && 
 			java.util.Objects.equals(createdDate, other.createdDate) &&
-			java.util.Objects.equals(sha256, other.sha256) && 
+			java.util.Objects.equals(industryStd, other.industryStd) && 
 			java.util.Objects.equals(status, other.status);
 	}
 
@@ -109,9 +120,5 @@ public class PersonIdentityEntity extends io.quarkus.hibernate.orm.panache.Panac
 
     public void setStatus(RefDataStatusEntity status) {
         this.status = status;
-    }
-
-    public static List<PersonIdentityEntity> findByStatusId(Short statusId) {
-        return find("status", new RefDataStatusEntity(statusId)).list();
     }
 }

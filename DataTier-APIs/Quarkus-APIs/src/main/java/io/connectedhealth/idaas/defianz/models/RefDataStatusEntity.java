@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 
 @Entity
-@Table(name = "refdata_status")
+@Table(name = "refdata_statuses")
 public class RefDataStatusEntity extends io.quarkus.hibernate.orm.panache.PanacheEntityBase {
     private short statusId;
     private String statusDescription;
