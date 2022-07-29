@@ -4,9 +4,8 @@ import java.util.HashMap;
 
 import javax.inject.Inject;
 
-import io.connectedhealth.idaas.defianz.dtos.PersonIdentity;
 import io.connectedhealth.idaas.defianz.dtos.PersonIdentityIn;
-
+import io.connectedhealth.idaas.defianz.models.PersonIdentityEntity;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -33,11 +32,11 @@ public class PersonIdentityServiceTest {
     @Test
     public void testIdentifyPerson() {
         PersonIdentityIn personIn1 = prepareInput();
-        PersonIdentity out1 = service.identify(personIn1);
-        Assertions.assertTrue(out1.personIdentityId > 0);
+        PersonIdentityEntity out1 = service.identify(personIn1);
+        Assertions.assertTrue(out1.getPersonIdentityId() > 0);
 
         PersonIdentityIn personIn2 = prepareInput();
-        PersonIdentity out2 = service.identify(personIn2);
-        Assertions.assertEquals(out1.personIdentityId, out2.personIdentityId);
+        PersonIdentityEntity out2 = service.identify(personIn2);
+        Assertions.assertEquals(out1.getPersonIdentityId(), out2.getPersonIdentityId());
     }
 }

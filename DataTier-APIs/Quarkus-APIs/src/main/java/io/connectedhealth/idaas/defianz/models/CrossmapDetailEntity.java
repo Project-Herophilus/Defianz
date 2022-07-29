@@ -13,7 +13,6 @@ import javax.persistence.Table;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.sql.Timestamp;
-import java.util.List;
 
 @Entity
 @Table(name = "crossmaps_dtl")
