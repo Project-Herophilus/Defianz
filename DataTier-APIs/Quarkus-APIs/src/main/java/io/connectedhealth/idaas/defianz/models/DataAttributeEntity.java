@@ -22,6 +22,7 @@ public class DataAttributeEntity extends io.quarkus.hibernate.orm.panache.Panach
     private Timestamp createdDate;
     private RefDataStatusEntity status;
     private String createdUser;
+    private String endpoint;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -52,6 +53,16 @@ public class DataAttributeEntity extends io.quarkus.hibernate.orm.panache.Panach
 
     public void setCreatedUser(String user) {
         this.createdUser = user;
+    }
+
+    @Basic
+    @Column(name = "endpoint")
+    public String getEndpoint() {
+        return endpoint;
+    }
+
+    public void setEndpoint(String endpoint) {
+        this.endpoint = endpoint;
     }
 
     @Basic
