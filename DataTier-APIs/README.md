@@ -1,0 +1,18 @@
+Return to the <a href="https://github.com/Project-Herophilus/Defianz" target="_blank">Main DataSynthesis Page</a>
+
+# Defianz APIs
+Defianz APIs are intended to be a place where several different languages of APIs are developed
+to access the DataSynthesis data model.
+
+| API (By Programming Language)                                                                               |Usage/Implementation |
+|-------------------------------------------------------------------------------------------------------------|----------|
+| [Node (Express)](https://github.com/Project-Herophilus/Defianz/tree/main/DataTier-APIs/Node-APIs/README.md) |Javascript Express based APIs .|
+| [Quarkus](https://github.com/Project-Herophilus/Defianz/tree/main/DataTier-APIs/Quarkus-APIs/README.md)     |Quarkus based APIs|
+
+# Focus on Improving
+We are focusing on continuing to improve. With the numerous implementation and partner implementations we
+have focused on success overall and as we progress forward the intent is to focus on success while being consistent.
+Please find details on how to help us [here](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/OngoingEnhancements.md).
+
+
+*Enjoy and Happy Coding!!!*
