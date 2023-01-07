@@ -66,9 +66,9 @@ Defianz consists of three core modules - data, apis, and a web interface.
 
 | Area | Sub-Module                                                                                              | 
 |------|---------------------------------------------------------------------------------------------------------|
-| Data | [DataTier](https://github.com/Project-Herophilus/Defianz/tree/main/DataTier/README.md)                                                                                 | 
+| Data | [DataTier](https://github.com/Project-Herophilus/Defianz/tree/main/DataTier/README.md)                  | 
 | APIs | [DataTier APIs](https://github.com/Project-Herophilus/Defianz/tree/main/DataTier-APIs/README.md)        |
-| User Interface | [DataTier Web User Interfaces](https://github.com/Project-Herophilus/Defianz/tree/main/WebUI/README.mc) |
+| User Interface | [DataTier Web User Interfaces](https://github.com/Project-Herophilus/Defianz/tree/main/WebUI/README.md) |
 
 
 *Enjoy and Happy Coding!!!*
