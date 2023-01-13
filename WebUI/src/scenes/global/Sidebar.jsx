@@ -133,21 +133,21 @@ const Sidebar = () => {
                             IDENTITIES
                         </Typography>
                         <Item 
-                            title="Manage Team"
+                            title="Persons"
                             to="/team"
                             icon={<PeopleOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
                         />  
                         <Item 
-                            title="Contacts Information"
+                            // title="Contacts Information"
                             to="/contacts"
                             icon={<ContactsOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
                         />  
                         <Item 
-                            title="Invoices"
+                            // title="Invoices"
                             to="/invoices"
                             icon={<ReceiptOutlinedIcon />}
                             selected={selected}
@@ -159,7 +159,7 @@ const Sidebar = () => {
                             color={colors.grey[300]}
                             sx={{ m: "15px 0 5px 20px" }}
                         >
-                            PAGES
+                            CROSS MAPS
                         </Typography>
                         <Item 
                             title="Profile Form"
