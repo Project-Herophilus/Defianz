@@ -147,17 +147,17 @@ const Sidebar = () => {
                         />  
                         <Item 
                             // title="Contacts Information"
-                            to="/contacts"
-                            icon={<ContactsOutlinedIcon />}
-                            selected={selected}
-                            setSelected={setSelected}
+                            // to="/contacts"
+                            // icon={<ContactsOutlinedIcon />}
+                            // selected={selected}
+                            // setSelected={setSelected}
                         />  
                         <Item 
                             // title="Invoices"
-                            to="/invoices"
-                            icon={<ReceiptOutlinedIcon />}
-                            selected={selected}
-                            setSelected={setSelected}
+                            // to="/invoices"
+                            // icon={<ReceiptOutlinedIcon />}
+                            // selected={selected}
+                            // setSelected={setSelected}
                         />  
 
                         <Typography 
