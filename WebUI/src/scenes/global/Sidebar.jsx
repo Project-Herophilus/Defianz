@@ -16,6 +16,10 @@ import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutl
 import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
+import RunningWithErrorsIcon from '@mui/icons-material/RunningWithErrors';
+import TableViewOutlinedIcon from '@mui/icons-material/TableViewOutlined';
+import ApiOutlinedIcon from '@mui/icons-material/ApiOutlined';
+import WorkspacePremiumOutlinedIcon from '@mui/icons-material/WorkspacePremiumOutlined';
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
     const theme = useTheme();
@@ -88,7 +92,9 @@ const Sidebar = () => {
                             </Box>
                         )}
                     </MenuItem>
-{/* THIS SECTION DISPLAYS USER INFO ON SIDEBAR - WILL NEED TO BE DYNAMIC FOR EACH USER */}
+                    
+{/* THIS SECTION DISPLAYS USER INFO ON SIDEBAR 
+- WILL NEED TO BE DYNAMIC FOR EACH USER */}
                     {!isCollapsed && (
                         <Box mb="25px">
                             <Box display="flex" justifyContent="center" alignItems="center">
@@ -162,7 +168,7 @@ const Sidebar = () => {
                             CROSS MAPS
                         </Typography>
                         <Item 
-                            title="Profile Form"
+                            title="Cross Map Details"
                             to="/form"
                             icon={<PersonOutlinedIcon />}
                             selected={selected}
@@ -188,33 +194,40 @@ const Sidebar = () => {
                             color={colors.grey[300]}
                             sx={{ m: "15px 0 5px 20px" }}
                         >
-                            CHARTS
+                            REFERENCE DATA
                         </Typography>
                         <Item 
-                            title="Bar Chart"
-                            to="/bar"
-                            icon={<BarChartOutlinedIcon />}
+                            title="Data - APIs"
+                            // to="/bar"
+                            icon={<ApiOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
                         />  
                         <Item 
-                            title="Pie Chart"
-                            to="/pie"
-                            icon={<PieChartOutlineOutlinedIcon />}
+                            title="Data - Tables"
+                            // to="/pie"
+                            icon={<TableViewOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
                         />  
                         <Item 
-                            title="Line Chart"
+                            title="Data Attributes"
                             to="/line"
                             icon={<TimelineOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
                         />  
                         <Item 
-                            title="Geography Chart"
+                            title="Industry Stds"
                             to="/geography"
-                            icon={<MapOutlinedIcon />}
+                            icon={<WorkspacePremiumOutlinedIcon />}
+                            selected={selected}
+                            setSelected={setSelected}
+                        />  
+                        <Item 
+                            title="Statuses"
+                            // to="/statuses"
+                            icon={<RunningWithErrorsIcon />}
                             selected={selected}
                             setSelected={setSelected}
                         />  
